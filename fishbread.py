@@ -43,7 +43,7 @@ def order_bread():
         else:
             print("팥붕어빵, 슈크림붕어빵, 초코붕어빵 중 하나의 맛을 선택해주세요")
 
-#관리자기능
+#관리자 기능
 def admin_mode():
     while True:
         bread_type = input("추가할 붕어빵을 선택하세요 (팥붕어빵, 슈크림붕어빵, 초코붕어빵) 또는 '종료' 입력 : ")
