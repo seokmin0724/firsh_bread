@@ -11,6 +11,20 @@ sales = {
     "초코붕어빵" : 0
 }
 
+#붕어빵 가격이 필요해요
+price = {
+    "팥붕어빵" : 1000,
+    "슈크림붕어빵": 1200,
+    "초코붕어빵" : 1500
+}
+
+def calculate_sales():
+    tatal_sales = 0
+    for key in sales:
+       total_sales+= (price[key] * sales[key])
+       price(f"오늘의 총 매출은 {total_sales}원 입니다.")
+
+
 #주문 기능
 def order_bread():
     while True:
@@ -51,3 +65,5 @@ while True:
         order_bread() #len() 
     elif mode == "관리자":
         admin_mode()
+
+calculate_sales()
